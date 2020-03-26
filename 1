@@ -1,0 +1,5 @@
+<div *ngIf="evaluation.state === 'open'" class="button-criteria">
+    <button routerLink="/my-evaluations-to-do" class="button-cancel" mat-flat-button color="primary">Cancel</button>
+    <button class="button-validate" mat-flat-button color="primary"
+        (click)="onValidate()">Validate</button>
+</div>
