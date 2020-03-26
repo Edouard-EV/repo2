@@ -1,0 +1,5 @@
+  <div class="note eval-score" *ngIf="evaluation.state === 'closed'">
+      <li>{{value.rate}}</li>
+      <li class="n-applicable" *ngIf="value.rate === null">N/A</li>
+      <li class="coef">coef {{value.criteria.coef}}</li>
+  </div>
